@@ -419,10 +419,6 @@
         <li class="nav-item active">
             <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Candy-clipart.svg/768px-Candy-clipart.svg.png" alt="" srcset="">
         </li>
-        <!-- <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> -->
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -553,8 +549,8 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  © 2022 Copyright:
+    Group Three
   </div>
   <!-- Copyright -->
 </footer>

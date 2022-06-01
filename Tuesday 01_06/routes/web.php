@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Controller_Test;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +25,20 @@ Route::get('/about-us', function () {
 Route::get('/contact-us', function () {
     return view('contact');
 });
-
+Route::get('/register', function () {
+    return view('register');
+});
+Route::get('/login', function () {
+    return view('login');
+});
+// Route::get('/listdata', function(){
+//     $tasks = [
+//         'sneakers',
+//         'mars',
+//         'twix'  
+//     ];
+//     return view('listdata',compact('tasks')); 
+// });
+// Route::get('/listdata', [Controller_Test::class, 'show']);
+//Route::get('/newTest', 'App\Http\Controllers\Controller_Test@test');
+Route::get('/newTest/id/{id}/user/{user}', [Controller_Test::class,'test']);
