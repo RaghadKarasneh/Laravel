@@ -430,7 +430,7 @@
                     <a class="nav-link" href="../../resources/views/store.php">store</a>
                 </li>
                 <li class="nav-item">
-                 <a class="nav-link ">About</a> 
+                 <a class="nav-link " href="./about">About</a> 
                 </li>
             </ul>
 

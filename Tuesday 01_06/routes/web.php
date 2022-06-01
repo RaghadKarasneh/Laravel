@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/about-us', function () {
+Route::get('/about', function () {
     return view('about');
 });
 Route::get('/contact-us', function () {
@@ -40,5 +40,14 @@ Route::get('/login', function () {
 //     return view('listdata',compact('tasks')); 
 // });
 // Route::get('/listdata', [Controller_Test::class, 'show']);
-//Route::get('/newTest', 'App\Http\Controllers\Controller_Test@test');
-Route::get('/newTest/id/{id}/user/{user}', [Controller_Test::class,'test']);
+// Route::get('/newTest/id/{id}/user/{user}', 'App\Http\Controllers\Controller_Test@test');
+
+//Q2
+Route::get('/newTest/id/{id}/user/{user}', [Controller_Test::class,'test'])-> where('id', '[0-9]+');
+
+//Q3
+Route::get('/newTest/id/{id}/user/{user}', [Controller_Test::class,'test'])-> where('user', '[A-z]+');
+
+// Route::get('/user/id/{id}/user/{user}', function ($id, $user) {
+//     //
+// })->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
