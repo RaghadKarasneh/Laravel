@@ -39,15 +39,21 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active">
+                    <a class="nav-link" href="/home">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../resources/views/store.php">store</a>
+                 <a class="nav-link " href="#about">About</a> 
                 </li>
                 <li class="nav-item">
-                 <a class="nav-link ">About</a> 
+                 <a class="nav-link " href="./register">Register</a> 
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link " href="./login">Login</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact">Contact Us</a>
                 </li>
             </ul>
 

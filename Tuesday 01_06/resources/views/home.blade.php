@@ -427,10 +427,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../resources/views/store.php">store</a>
+                 <a class="nav-link " href="./about">About</a> 
                 </li>
                 <li class="nav-item">
-                 <a class="nav-link " href="./about">About</a> 
+                 <a class="nav-link " href="./register">Register</a> 
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link " href="./login">Login</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact">Contact Us</a>
                 </li>
             </ul>
 
