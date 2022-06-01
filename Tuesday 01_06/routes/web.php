@@ -47,7 +47,3 @@ Route::get('/newTest/id/{id}/user/{user}', [Controller_Test::class,'test'])-> wh
 
 //Q3
 Route::get('/newTest/id/{id}/user/{user}', [Controller_Test::class,'test'])-> where('user', '[A-z]+');
-
-// Route::get('/user/id/{id}/user/{user}', function ($id, $user) {
-//     //
-// })->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
