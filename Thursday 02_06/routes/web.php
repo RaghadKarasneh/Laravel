@@ -16,27 +16,13 @@ use App\Http\Controllers\Controller_Test;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', function () {
-    return view('home');
-});
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/content', function () {
-    return view('content');
-});
-Route::get('/about2', function () {
-    return view('about2');
-});
+Route::get('/home', [Controller_Test::class,'candyHome']);
+Route::get('/about', [Controller_Test::class,'candyAbout']);
+Route::get('/contact', [Controller_Test::class,'candyContact']);
+Route::get('/register', [Controller_Test::class,'candyRegister']);
+Route::get('/login', [Controller_Test::class,'candyLogin']);
+Route::get('/about', [Controller_Test::class,'Send']);
+
 // Route::get('/listdata', function(){
 //     $tasks = [
 //         'sneakers',

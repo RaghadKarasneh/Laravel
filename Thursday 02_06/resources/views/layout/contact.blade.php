@@ -1,45 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Document</title>
-    <style>
-        #contact-form{
-            width: 50%;
-            margin: auto;}
-        </style>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <li class="nav-item active">
-            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Candy-clipart.svg/768px-Candy-clipart.svg.png" alt="" srcset="" height="70px" width="70px">
-        </li>
+@extends('layout.master')
+@section('title','Contact Us')
+@section('content')
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                    <a class="nav-link" href="./home">Home</a>
-                </li>
-
-                <li class="nav-item">
-                 <a class="nav-link " href="./about">About</a> 
-                </li>
-                <li class="nav-item">
-                 <a class="nav-link " href="./register">Register</a> 
-                </li>
-                <li class="nav-item">
-                 <a class="nav-link " href="./login">Login</a> 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
     <!--Section: Contact v.2-->
 <section class="mb-4" style="margin-top:100px">
 
@@ -142,18 +104,4 @@
 </div>
 
 </section>
-<!--Section: Contact v.2-->
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-  
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2022 Copyright:
-    Group Three
-  </div>
-  <!-- Copyright -->
-</footer>
-</body>
-</html>
+@stop
