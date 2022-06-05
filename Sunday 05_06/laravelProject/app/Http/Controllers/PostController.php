@@ -39,8 +39,10 @@ class PostController extends Controller
     //Create Data
     public function createData(Request $request){
         $create=new Post();
-        $create->title=$request->input('title');
-        $create->body=$request->input('body');
+        $create->candy_name=$request->input('name');
+        $create->candy_quantity=$request->input('quantity');
+        $create->candy_price=$request->input('price');
+        $create->candy_image=$request->input('image');
         $create->save();
         return redirect('/shop')->with('message','The data has been added successfully');
     }
