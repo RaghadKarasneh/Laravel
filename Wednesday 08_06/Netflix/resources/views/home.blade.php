@@ -72,6 +72,7 @@
                     <div class="card-body">
                       <h5 class="card-title">{{$item->movie_name}}</h5>
                       <p class="card-text">Movie genre: {{$item->movie_genre}}</p>
+                      <a class="btn btn-primary" href="{{url('/movies/id/'.$item->id)}}"style="margin:10px auto;">Show</a>
                       <a class="btn btn-primary" href="{{url('/movies/'.$item->id.'/edit')}}"style="margin:10px auto;">Update</a>
                       <a class="btn btn-primary" href="{{url('/movies/delete/'.$item->id)}}" style="margin:10px auto;">Delete</a>
                     </div>

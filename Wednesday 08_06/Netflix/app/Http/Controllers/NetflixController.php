@@ -13,6 +13,11 @@ class NetflixController extends Controller
         $movies=Netflix::all();
         return view('home',compact('movies'));
     }
+    //Show movie
+    public function viewMovie($id){
+        $show= Netflix::find($id);
+        return view('showMovie',compact('show'));
+    }
      //Creat new movie
      public function createMovie(Request $request){
         $create=new Netflix();

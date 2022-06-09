@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/movies', [NetflixController::class,'index']);
+Route::get('/movies/id/{id}', [NetflixController::class, 'viewMovie']);
 Route::get('/movies/create', [NetflixController::class, 'addMovie']);
 Route::post('/movies', [NetflixController::class, 'createMovie']);
 Route::get('/movies/{id}/edit', [NetflixController::class, 'editMovie']);
